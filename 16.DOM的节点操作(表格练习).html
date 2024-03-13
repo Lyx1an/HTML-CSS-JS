@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    table {
+        width: 100%;
+        /* 合并表格 */
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    tr,td {
+        border:  2px solid rgb(139, 131, 138);
+        text-align: center;  
+        padding: 6px;
+    }
+    th {
+
+        background-color: #ddd;
+        padding: 6px;
+    }
+    #button1 {
+        margin-left: 20px;
+        background-color: cornflowerblue;
+    }
+    
+    button {
+        margin-left: 7px;
+    }
+</style>
+<body>
+
+    <h1 style="text-align: center;">表格的增删查改</h1>
+    <button  onclick="add_data()"id='button1'>add newdata</button>
+    <table id="table">
+        <tr>
+            <!-- th的表的标题 -->
+            <th>name</th>
+            <th>number</th>
+            <th>
+                action
+            </th>
+        </tr>
+        <tr>
+            <td>帆波</td>
+            <td>122341241</td>
+            <td>
+                <button onclick="edit_data(this)">edit</button><button onclick="delete_data(this)">delete</button>
+            </td>
+        </tr>
+    </table>
+    <script src="./JS/table.js"></script>
+</body>
+</html>

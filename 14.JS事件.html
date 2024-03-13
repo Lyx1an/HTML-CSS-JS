@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="click_event()">这是一个点击事件按钮</button>
+    <script>
+        function click_event(){
+            alert("点击事件触发了")
+        }
+        // 获取焦点
+        function focus_event(){
+            console.log("获取焦点");
+        }
+        function blur_event(){
+            console.log("失去焦点");
+        }
+    </script>
+    <span style="color: aqua;">测试input的焦点函数时候，请按F12观察console</span>
+    <input type="text" placeholder="请输入内容" onfocus="focus_event()" onblur="blur_event()">
+</body>
+</html>
