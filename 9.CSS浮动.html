@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .father{
+        border: solid;
+        border-color: black;
+        background-color: aquamarine;
+        /* height: 200px;
+        width: 700px; */
+
+
+        /* 清除浮动塌陷的方法 */
+        overflow: hidden;
+        
+    }
+    .sonleft{
+        width: 100px;
+        height: 100px;
+        background-color: yellowgreen;
+        float: left;
+
+    }
+    .sonright{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        float: right;
+    }
+</style>
+
+<body>
+    <div class="father">
+        <div class="sonleft">左浮动</div>
+        <div class="sonleft">左浮动</div>
+        <div class="sonleft">左浮动</div>
+        <div class="sonright">右浮动</div>  
+        <div class="sonright">右浮动</div>  
+        <div class="sonright">右浮动</div>  
+    </div>
+    <p style="background-color: blueviolet;">这是盒子发生了塌陷，正常情况下应该显示在盒子的外部</p>
+    <br>
+    <p style="background-color: blueviolet;">这是盒子发生了塌陷，正常情况下应该显示在盒子的外部</p>
+</body>
+</html>

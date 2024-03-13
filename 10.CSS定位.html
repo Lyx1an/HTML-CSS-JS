@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1 {
+        width: 800px;
+        height: 300px;
+        background-color: aquamarine;
+    }
+    .box-relative {
+        width: 100px;
+        height: 100px;
+        background-color: purple;
+    }
+    .box-normal {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+    }
+    .box2 {
+        width: 800px;
+        height: 300px;
+        background-color: grey;
+    }
+    .box-absolute {
+        width: 100px;
+        height: 100px;
+        background-color: yellowgreen;
+        position: absolute;
+        /* 脱离了文档流，下面的紫色元素自动上浮了 */
+        left: 20%;
+    }
+    .box-fixed {
+        width: 100px;
+        height: 100px;
+        color: aqua;
+        position: fixed;
+        right: 0;
+        top: 300px;
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <h1>相对定位</h1>
+    <div class="box1">
+        <div class="box-normal"></div>
+        <div class="box-relative"></div>
+        <div class="box-normal"></div>
+    </div>
+    <h1>绝对定位</h1>
+    <div class="box2">
+        <!-- 脱离正常文档流， 相对于父类box定位-->
+        <div class="box-normal"></div>
+        <div class="box-absolute"></div>
+        <div class="box-normal"></div>
+    </div>
+<!-- 脱离正常文档流， 相对于网页定位-->
+    <h1>固定定位</h1> 
+    <div class="box-fixed"></div>
+
+
+
+</body>
+</html>

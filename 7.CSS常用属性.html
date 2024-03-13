@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS常用属性</title>
+</head>
+<style>
+    .block {
+        background-color: aqua;
+    }
+    .sp_block {
+        width: 200px;
+        height: 100px;
+        background-color: rgb(196, 127, 38);
+    }
+    .inline {
+        background-color: cadetblue;
+    }
+    * {
+        font-family: 'KaiTi';
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .inline-block {
+       width: 150px;
+    }
+</style>
+
+
+<body>
+    <h1>这是一个font复合属性示例</h1>
+    <p style="line-height: 40px;">这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本
+        这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本 
+        这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本
+        这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本
+        这是一段长文本这是一段长文本这是一段长文本这是一段长文本
+    </p>
+    <div class="block">这是一个普通块级元素</div>
+    <br>
+    <div class="sp_block">这是一个复合块级元素</div>
+    <br>
+    <span class="inline">这是一个行内元素，无法修改宽高，因为由内容决定</span>
+    <img src="NUIST.svg.png" alt="" class="inline-block">
+    <img src="NUIST.svg.png" alt="" class="inline-block">
+    <img src="NUIST.svg.png" alt="" class="inline-block">
+    <h2>这是一个转换成行内元素的div标签，通过display</h2>
+    <div style="display: inline-block; background-color: aquamarine;">你好世界</div>
+    <div style="display: inline; background-color: rebeccapurple;" >你好世界</div>
+    <div style="display: block;  background-color: blue;">你好世界</div>
+</body>
+</html>
